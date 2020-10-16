@@ -3,6 +3,40 @@
   padding: 0;
 }
 
-.grid {
+body {
+  min-height: 100vh;
   display: grid;
+  grid-template-rows: 1.2fr 7fr 0.8fr;
+  grid-template-columns: 1fr 3fr;
+}
+
+header {
+  grid-row: 1;
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: bisque;
+}
+nav {
+  margin-left: 20px;
+  font-size: 30px;
+}
+h1 {
+  margin-right: 20px;
+  font-size: 60px;
+}
+
+article {
+  grid-column: 1;
+  background-color: yellow;
+}
+aside {
+  grid-column: 2;
+  background-color: yellowgreen;
+}
+footer {
+  grid-column: 1 / 3;
+  background-color: gray;
+  text-align: center;
 }
