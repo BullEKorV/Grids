@@ -89,6 +89,13 @@ nav a:not(:hover) {
   transition: 0.1s;
 }
 
+.images {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
 .image {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -100,4 +107,11 @@ nav a:not(:hover) {
 }
 p {
   font-size: 1.5rem;
+}
+
+#weird {
+  display: none;
+}
+#quirky {
+  display: none;
 }
